@@ -1,0 +1,77 @@
+.responsive {
+    width: 40%;
+
+    @media (max-width: 1200px) {
+        width: 60%;
+    }
+
+    @media (max-width: 768px) {
+        width: 70%;
+    }
+
+    @media (max-width: 576px) {
+        width: 80%;
+    }
+}
+
+.logo-animation {
+    animation: leaves 1.5s ease-in-out infinite alternate;
+    -webkit-animation: leaves 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes leaves {
+    0% {
+        transform: scale(1.0);
+        opacity: 0.75;
+    }
+
+    100% {
+        transform: scale(1.1);
+        
+    }
+}
+
+.button-group-bar {
+    background-color: #141414;
+    border-top: 1px solid #E6AD36;
+    border-bottom: 1px solid #E6AD36;
+
+    @media (max-width: 576px) {
+        margin-top: 0vh;
+    }
+}
+
+.BTX-home-but {
+    text-align: center;
+    padding-top: 20px;
+
+    img {
+        width: 28%;
+
+        @media (max-width: 768px) {
+            width: 50%;
+        }
+
+        @media (max-width: 1200px) {
+            width: 36%;
+        }
+    }
+
+    p {
+        padding-top: 10px;
+        color: #ECD095;
+        font-size: 13px;
+    }
+
+    &:hover {
+        cursor: pointer;
+        transform: translatey(-8px);
+    }
+
+    transition: .35s ease-in-out;
+}
+
+.button-group-container {
+    padding-left: 15%;
+    padding-right: 15%;
+}

@@ -1,0 +1,314 @@
+// @import '../../assets/sass/custom.scss';
+
+.color-white {
+    color: white;
+}
+
+.custom-presale-container {
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+}
+
+.custom-presale-col {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.custom-presale-body {
+    // background-color: rgba(0, 0, 0, 0.3);
+    padding: 30px 40px;
+    border-radius: 5px;
+}
+
+.custom-presale-left {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 460px;
+    font-family: 'Microsoft JhengHei';
+
+
+    .custom-presale-header {
+        // margin-top: 2rem;
+        margin-bottom: 2rem;
+        font-size: 23px;
+        font-weight: 600 !important;
+        text-align: center;
+        color: #00ffa6;
+    }
+
+    .custom-presale-price {
+        color: #FEE277;
+        font-size: 1.2rem;
+        font-weight: lighter;
+        font-family: 'Microsoft JhengHei';
+        font-weight: 600;
+        text-align: center;
+    }
+
+    // .custom-presale-goal {
+    //     color: $color-green-1;
+    //     font-size: 1.3rem;
+    //     font-weight: lighter;
+    //     margin-bottom: 2rem;
+    //     font-family: "Microsoft JhengHei";
+    //     text-align: center;
+    // }
+}
+
+
+.custom-buy-card {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 400px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    color: #D9D9D9;
+
+}
+
+.custom-buy-card-body {
+    border-radius: 10px;
+    padding: 3rem 3rem 2rem 3rem;
+    background-color: #2B2D2E;
+
+
+    .custom-buy-card-header {
+        text-align: center;
+        font-family: 'Franklin Gothic';
+        font-size: 25px;
+    }
+
+    .custom-buy-card-amount {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .custom-buy-card-amount-header {
+        color: #D9D9D9;
+        margin-bottom: 1rem;
+        font-size: 13px;
+        font-weight: 100;
+        font-family: 'Franklin Gothic';
+    }
+
+    .custom-buy-card-amount-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Microsoft JhengHei';
+
+        .custom-buy-card-amount-input {
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.3);
+            border-radius: 5px 0 0 5px;
+            border: none;
+            padding: 8px 20px;
+            color: white;
+
+            &:hover,
+            &:focus {
+                outline: none;
+            }
+        }
+
+        // remove spin-button
+        input[type=number],
+        input[type=number]::-webkit-inner-spin-button,
+        input[type=number]::-webkit-outer-spin-button {
+            -moz-appearance: textfield;
+            -webkit-appearance: none;
+        }
+
+        .custom-buy-card-amount-unit {
+            width: 80px;
+            display: inline-block;
+
+            background-color: rgba(0, 0, 0, 0.6);
+            border-radius: 0 5px 5px 0;
+            padding: 8px 0;
+            text-align: center;
+        }
+
+        .btn-primary.dropdown-toggle {
+            background-color: rgba(0, 0, 0, 0.6) !important;
+        }
+
+        .box-shadow-always-none {
+            box-shadow: none !important;
+
+            &:hover {
+                box-shadow: none !important;
+            }
+
+            &:active {
+                background-color: rgba(0, 0, 0, 0.6) !important;
+            }
+        }
+    }
+
+    .custom-buy-card-info {
+        margin-Bottom: 15px;
+        text-align: center;
+        font-family: "Franklin Gothic" !important;
+        font-size: 15px;
+        color: #D9D9D9;
+
+        b {
+            font-family: "Franklin Gothic" !important;
+        }
+    }
+}
+
+.custom-buy-card-buy-button {
+    display: block;
+    border-radius: 5px;
+    width: 50%;
+    padding: .6rem 1.2rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 15px;
+    color: white;
+    cursor: pointer;
+    // background-color: $color-green-1;
+    background: rgba(0, 0, 0, 0.5) !important;
+    z-index: 1001;
+    outline: none;
+    font-family: "Franklin Gothic";
+    border: 1px solid gray;
+
+    &:hover,
+    &:focus {
+        color: white;
+        background-color: #00ffa6;
+        box-shadow: 0 0 6px #9ecaed;
+    }
+
+    &:disabled {
+        background-color: #545454;
+        box-shadow: none;
+        color: gray;
+        cursor: not-allowed;
+    }
+}
+
+.custom-buy-card-buy-state-info {
+    color: #00F69E;
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 1rem;
+}
+
+////////////////////////////
+.custom-timer-header {
+    margin-top: 4rem;
+    text-align: center;
+    font-size: 1.6rem;
+    color: #D3D3D3;
+}
+
+.custom-timer {
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    .customer-timer-time {
+        font-size: 3rem;
+        font-family: 'Nunito', sans-serif;
+    }
+
+    .customer-timer-uint {
+        font-size: 1rem;
+        color: #FEE277;
+    }
+}
+
+////////////////////////////
+.custom-progress-container {
+    margin-bottom: 1rem;
+
+    .progress {
+        height: 10px !important;
+        border-radius: 5px !important;
+
+        // box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        .progress-bar {
+            background-color: gray !important;
+            border-radius: 5px !important;
+            box-shadow: 0 0 15px gray;
+        }
+    }
+
+    .custome-progress-number {
+        margin-top: 1rem;
+        text-align: center;
+        // font-family: $number-font;
+        font-family: "Segoe UI";
+        font-size: 1rem !important;
+    }
+}
+
+.page-subtitle {
+    font-family: 'Microsoft JhengHei';
+    font-size: 25px;
+    font-weight: 600;
+    color: #D3D3D3;
+}
+
+
+.logo-back-ftm {
+    position: absolute;
+    width: 130px;
+    left: 18%;
+    top: 70%;
+
+    @media (max-width: 576px) {
+        width: 100px;
+        left: 8%;
+        top: 75%;
+    }
+}
+
+.logo-back-bitx {
+    position: absolute;
+    width: 140px;
+    right: 16%;
+    top: 70%;
+
+    @media (max-width: 576px) {
+        width: 110px;
+        right: 8%;
+        top: 75%;
+    }
+}
+
+.background-1 {
+    background-image: url('../../assets/img/pngegg.png');
+    background-size: cover;
+}
+
+.whitelist-but {
+    padding: 10px 50px;
+    background: rgba(0, 0, 0, 0.3);
+    color: white;
+    border: 1px solid gray;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+
+    &:hover {
+        cursor:pointer;
+        transform: scale(1.1);
+        color: #FEE277;
+    }
+
+    &:active {
+        transition: 0.1s ease-out;
+        transform: scale(1);
+    }
+}
